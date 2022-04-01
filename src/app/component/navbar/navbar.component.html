@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" routerLink="/home"><img src="assets/images/logo.png" id="logo" alt="KS" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/about-us">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-toggle="dropdown" aria-expanded="false">
+                    FOOD CATEGORY
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">DAILY ESSENTIALS</a></li>
+                    <li><a class="dropdown-item" href="#">DAIRY PRODUCTS</a></li>
+                    <li><a class="dropdown-item" href="#">FRUITS & VEGETABLES</a></li>
+                    <li><a class="dropdown-item" href="#">SPICES</a></li>
+                    <li><a class="dropdown-item" href="#">GROCERIES</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-toggle="dropdown" aria-expanded="false">
+                    KITCHEN APPLIANCES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">ELECTRONIC APPLIANCES</a></li>
+                    <li><a class="dropdown-item" href="#">HARDWARE</a></li>
+                    <li><a class="dropdown-item" href="#">UTENSILS</a></li>
+                    <li><a class="dropdown-item" href="#">CROCKERY</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item disabled" href="#">CLEANLINESS</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <span class="bi bi-search search-icon" type="submit"></span>
+        </form>
+        <div>
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                <li class="nav-item" id="Lg">
+                    <a class="nav-link nav-rit" routerLink="/login">LOG IN&nbsp;/</a>
+                </li>
+                <li class="nav-item" id="Reg">
+                    <a class="nav-link nav-rit" routerLink="/register">&nbsp;REGISTER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-rit" routerLink="/cart"><span id="cart"
+                            class="fa-solid fa-cart-arrow-down"></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

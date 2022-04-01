@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+.alert{
+    margin-bottom: 0rem;
+}
+/* *{
+    box-sizing: border-box;
+} */
+/* body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+} */
+/* a{
+    text-decoration: none;
+} */
