@@ -24,3 +24,10 @@ li a:hover{
     opacity: 0.9;
     cursor: pointer;
 }
+.foodName{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
