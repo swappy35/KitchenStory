@@ -14,6 +14,7 @@ import { NotfoundComponent } from './component/notfound/notfound.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './service/user.service';
+import { ItemPageComponent } from './component/item-page/item-page.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { UserService } from './service/user.service';
     AboutUsComponent,
     LoginComponent,
     RegisterComponent,
+    ItemPageComponent,
     NotfoundComponent
   ],
   imports: [

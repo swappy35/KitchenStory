@@ -1,1 +1,13 @@
-<p>item-page works!</p>
+<div class="abc">
+    <ul>
+        <li *ngFor="let product of products">
+            <a>
+                <img src="{{product.imageUrl}}" alt="{{product.name}}">
+                <div class="productname">
+                    {{product.name}}
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+

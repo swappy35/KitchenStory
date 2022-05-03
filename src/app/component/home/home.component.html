@@ -2,8 +2,8 @@
     <!-- <img src="src/assets/images/background.jpg" alt=""> -->
     <ul>
         <li *ngFor="let food of foods">
-            <a routerLink="/item-page/{{food.id}}">
-                <img src="{{food.imageUrl}}" alt="foodimages">
+            <a routerLink="/item-page">
+                <img src="{{food.imageUrl}}" alt="{{food.name}}">
                 <div class="foodName">
                     {{food.name}}
                 </div>

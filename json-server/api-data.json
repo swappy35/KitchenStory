@@ -19,7 +19,7 @@
     {
       "id": 1,
       "name": "Rice",
-      "type": "Cereal",
+      "type": "cereal",
       "quantity": 5,
       "price": 200,
       "imageUrl": "src/assets/images/Cereals/rice.jpg",
@@ -28,7 +28,7 @@
     {
       "id": 2,
       "name": "Pulse",
-      "type": "Cereal",
+      "type": "cereal",
       "quantity": 2,
       "price": 100,
       "imageUrl": "src/assets/images/Cereals/pulse.jpg",
@@ -37,16 +37,16 @@
     {
       "id": 3,
       "name": "Wheat",
-      "type": "Cereal",
+      "type": "cereal",
       "quantity": 5,
       "price": 200,
       "imageUrl": "src/assets/images/Cereals/wheat.jpg",
-      "description": "Aromatice fresh grains. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+      "description": "Aromatic fresh grains. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
     },
     {
       "id": 4,
       "name": "Oats",
-      "type": "Cereal",
+      "type": "cereal",
       "quantity": 1,
       "price": 60,
       "imageUrl": "src/assets/images/Cereals/oats.jpg",
@@ -54,8 +54,8 @@
     },
     {
       "id": 5,
-      "name": "soyabean",
-      "type": "Cereal",
+      "name": "Soyabean",
+      "type": "cereal",
       "quantity": 1,
       "price": 50,
       "imageUrl": "src/assets/images/Cereals/soyabean.jpg",
@@ -64,7 +64,7 @@
     {
       "id": 6,
       "name": "Apple",
-      "type": "Fruit",
+      "type": "fruit",
       "quantity": 1,
       "price": 300,
       "imageUrl": "src/assets/images/Fruits-Vegetables/apple.jpg",
@@ -73,7 +73,7 @@
     {
       "id": 7,
       "name": "Banana",
-      "type": "Fruit",
+      "type": "fruit",
       "quantity": 12,
       "price": 40,
       "imageUrl": "src/assets/images/Fruits-Vegetables/banana.jpg",
@@ -82,7 +82,7 @@
     {
       "id": 8,
       "name": "Orange",
-      "type": "Fruit",
+      "type": "fruit",
       "quantity": 1,
       "price": 120,
       "imageUrl": "src/assets/images/Fruits-Vegetables/orange.jpg",
@@ -91,7 +91,7 @@
     {
       "id": 9,
       "name": "Grapes",
-      "type": "Fruit",
+      "type": "fruit",
       "quantity": 1,
       "price": 150,
       "imageUrl": "src/assets/images/Fruits-Vegetables/grape.jpg",
@@ -100,7 +100,7 @@
     {
       "id": 10,
       "name": "Watermelon",
-      "type": "Fruit",
+      "type": "fruit",
       "quantity": 1,
       "price": 200,
       "imageUrl": "src/assets/images/Fruits-Vegetables/watermelon.jpg",
@@ -154,7 +154,7 @@
     {
       "id": 16,
       "name": "Bread",
-      "type": "daily-essential",
+      "type": "daily-essentials",
       "quantity": 1,
       "price": 30,
       "imageUrl": "src/assets/images/Daily-Essentials/bread.png",
@@ -163,7 +163,7 @@
     {
       "id": 17,
       "name": "Milk",
-      "type": "daily-essential",
+      "type": "daily-essentials",
       "quantity": 1,
       "price": 45,
       "imageUrl": "src/assets/images/Daily-Essentials/milk.png",
@@ -172,7 +172,7 @@
     {
       "id": 18,
       "name": "Cheese",
-      "type": "daily-essential",
+      "type": "daily-essentials",
       "quantity": 1,
       "price": 20,
       "imageUrl": "src/assets/images/Daily-Essentials/cheese.png",
@@ -180,8 +180,8 @@
     },
     {
       "id": 19,
-      "name": "butter",
-      "type": "daily-essential",
+      "name": "Butter",
+      "type": "daily-essentials",
       "quantity": 1,
       "price": 30,
       "imageUrl": "src/assets/images/Daily-Essentials/butter.png",
@@ -190,7 +190,7 @@
     {
       "id": 20,
       "name": "Paneer",
-      "type": "daily-essential",
+      "type": "daily-essentials",
       "quantity": 1,
       "price": 30,
       "imageUrl": "src/assets/images/Daily-Essentials/paneer.png",

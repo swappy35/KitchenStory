@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { subscribeOn } from 'rxjs';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
@@ -39,7 +38,7 @@ export class LoginComponent implements OnInit {
           }
         }
         else{
-          this.message = "USer does not exist";
+          this.message = "User does not exist";
         }
       });
     }

@@ -6,8 +6,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductService {
   
-  constructor(private httpCLient : HttpClient) { }
+  constructor(private httpClient : HttpClient) { }
 
   private url : string = 'http://localhost:3000/products';
+
+  public getProducts(){
+    return this.httpClient.get(this.url);
+  }
+  
+  public getProductByType(type: string) {
+    return this.httpClient.get(`${this.url}?type=${type}`);
+  }
 
 }

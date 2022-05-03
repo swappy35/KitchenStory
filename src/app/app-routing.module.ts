@@ -13,8 +13,7 @@ const routes: Routes = [
     { path: 'about-us', component: AboutUsComponent},
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
-    { path: 'item-page/:id', component: ItemPageComponent },
-    
+    { path: 'item-page', component: ItemPageComponent },
     // { path: 'products', loadChildren: () => import('./component/products/product-routing.module').then(m => m.ProductRoutingModule) },
     // { path: 'users', loadChildren: () => import('./component/users/user-routing.module').then(m => m.UserRoutingModule) },
     { path: '**', component: NotfoundComponent }

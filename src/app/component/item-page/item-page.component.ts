@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProductService } from 'src/app/service/items/product.service';
 
 @Component({
   selector: 'app-item-page',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemPageComponent implements OnInit {
 
-  constructor() { }
+  public products : any;
+
+  constructor(private productSrv : ProductService, private router : Router) { }
 
   ngOnInit(): void {
+    this.getProducts();
+  }
+
+  public getProducts(){
+    this.productSrv.getProducts().subscribe(data => {
+      console.log(data);
+      this.products = data;
+    });
+  }
+
+  public getProductByType(type:string){
+    this.productSrv.getProductByType(type).subscribe(data =>{
+      console.log(data);
+      this.products = data;
+    });
   }
 
 }
