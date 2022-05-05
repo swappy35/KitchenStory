@@ -1,8 +1,8 @@
 <div id="abc">
     <!-- <img src="src/assets/images/background.jpg" alt=""> -->
     <ul>
-        <li *ngFor="let food of foods">
-            <a routerLink="/item-page">
+        <li *ngFor="let food of foods" (click)="getProductByType(food.type)">
+            <a>
                 <img src="{{food.imageUrl}}" alt="{{food.name}}">
                 <div class="foodName">
                     {{food.name}}
@@ -11,3 +11,4 @@
         </li>
     </ul>
 </div>
+<!-- routerLink="/item-page/{{food.type}}" -->

@@ -24,3 +24,22 @@ li a:hover{
     opacity: 0.9;
     cursor: pointer;
 }
+#name{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(147, 56, 88);
+    font-weight: 200;
+}
+#price{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(42, 96, 25);
+    font-weight: 200;
+}
+#desc{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(147, 159, 78);
+    font-weight: 200;
+    padding: 5px;
+}

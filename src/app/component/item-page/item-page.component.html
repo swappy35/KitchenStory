@@ -1,10 +1,17 @@
-<div class="abc">
+<h2>Item-Page</h2>
+<div class="products">
     <ul>
         <li *ngFor="let product of products">
             <a>
-                <img src="{{product.imageUrl}}" alt="{{product.name}}">
-                <div class="productname">
-                    {{product.name}}
+                <img src="{{product.imageUrl}}" alt="{{product.name}} [image not found]">
+                <div id="name">
+                    {{product.name}} 
+                </div>
+                <div id="price">
+                    {{product.price | currency:"INR":"symbol"}} per {{product.quantity}} {{product.quantityType}}<br>
+                </div>
+                <div id="desc">
+                    {{product.description}}
                 </div>
             </a>
         </li>
