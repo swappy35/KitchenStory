@@ -32,13 +32,14 @@ li a:hover{
 }
 #price{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(42, 96, 25);
     font-weight: 200;
 }
 #desc{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 12px;
+    text-align: justify;
     color: rgb(147, 159, 78);
     font-weight: 200;
     padding: 5px;

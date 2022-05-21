@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './service/user.service';
 import { ItemPageComponent } from './component/item-page/item-page.component';
+import { AuthserviceService } from './service/authservice.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,10 @@ import { ItemPageComponent } from './component/item-page/item-page.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [UserService],
+  providers: [
+    UserService, 
+    AuthserviceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
