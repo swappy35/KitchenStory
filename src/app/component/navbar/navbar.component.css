@@ -73,12 +73,15 @@
     padding-right: 0px;
     padding-top: 0%;
     padding-bottom: 0%;
+
+    /* font-size: 20px; */
 }
 #Lg{
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     padding-left: 8px;
-    padding-top: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background-color: rgb(29 112 93);
     margin-top: 3px;
 }
@@ -86,9 +89,18 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     padding-right: 8px;
-    padding-top: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background-color: rgb(29 112 93);
     margin-top: 3px;
+}
+#Lg-Out{
+    border-radius: 3px;
+    /* padding-left: 8px; */
+    padding: 3px;
+    background-color: rgb(29 112 93);
+    margin-top: 3px;
+    cursor: pointer;
 }
 /* a{
     color: #af1313;

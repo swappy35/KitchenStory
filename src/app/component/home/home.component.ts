@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { delay } from 'rxjs';
 import { FoodService } from 'src/app/service/items/food.service';
 import { ProductService } from 'src/app/service/items/product.service';
 import { Food } from 'src/app/shared/models/food';
@@ -21,9 +22,9 @@ export class HomeComponent implements OnInit {
   }
 
   getProductByType(itemType:string){
-    console.log("Navogate to "+itemType);
-    this.router.navigate(['/item-page',itemType])
-    // this.productSrv.getProductByType(type).subscribe(data =>{
+    console.log("Navigate to "+itemType);
+    this.router.navigate(['/item-page',itemType]);
+    // this.productSrv.getProductByType(itemType).subscribe(data =>{
     //   console.log(data);
     //   this.products = data;
     // });

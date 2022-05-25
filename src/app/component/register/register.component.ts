@@ -13,7 +13,8 @@ export class RegisterComponent implements OnInit {
     firstName:'',
     lastName:'',
     email:'',
-    password:''
+    password:'',
+    role:''
   }
   public submitted:boolean = false;
   constructor(private userSrv:UserService, private router:Router) { }
@@ -26,6 +27,7 @@ export class RegisterComponent implements OnInit {
     if(form.valid){
       this.submitted = true;
       console.log(this.user);
+      this.user.role = "customer";
       this.userSrv.addUser(this.user).subscribe(res=>{
         console.log(res);
         this.router.navigateByUrl('login');
@@ -57,4 +59,5 @@ interface User {
   lastName:string;
   email:string;
   password:string;
+  role:any;
 }

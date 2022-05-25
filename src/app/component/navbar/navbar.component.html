@@ -1,9 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" routerLink="/home"><img src="assets/images/logo.png" id="logo" alt="KS" /></a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
             <li class="nav-item">
@@ -43,20 +45,36 @@
             </li>
         </ul>
         <form class="d-flex ">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" >
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
             <span class="bi bi-search search-icon" type="submit"></span>
         </form>
         <div>
-            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                <li class="nav-item" id="Lg">
-                    <a class="nav-link nav-rit" routerLinkActive="active" routerLink="/login">LOG IN&nbsp;/</a>
-                </li>
-                <li class="nav-item" id="Reg">
-                    <a class="nav-link nav-rit" routerLinkActive="active" routerLink="/register">&nbsp;REGISTER</a>
+            <div *ngIf="!(isAdmLoggedIn | async)">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;"
+                    *ngIf="!(isCustLoggedIn | async)">
+                    <li class="nav-item" id="Lg">
+                        <a class="nav-link nav-rit" style="display: hide;" routerLinkActive="active"
+                            routerLink="/login">LOG IN&nbsp;/</a>
+                    </li>
+                    <li class="nav-item" id="Reg">
+                        <a class="nav-link nav-rit" routerLinkActive="active" routerLink="/register">&nbsp;REGISTER</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;"
+                *ngIf="isCustLoggedIn | async as isCustLoggedIn">
+                <li class="nav-item" id="Lg-Out" (click)="onLogout()" name="logout">
+                    <a class="nav-link nav-rit" routerLinkActive="active">LOG OUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-rit" routerLink="/cart"><span id="cart"
-                            class="fa-solid fa-cart-arrow-down"></span></a>
+                    <a class="nav-link nav-rit" routerLink="/cart">
+                        <span id="cart" class="fa-solid fa-cart-arrow-down"></span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                <li class="nav-item" id="Lg-Out" (click)="onLogout()" name="logout"
+                    *ngIf="isAdmLoggedIn | async as isAdmLoggedIn">
+                    <a class="nav-link nav-rit" routerLinkActive="active">LOG OUT</a>
                 </li>
             </ul>
         </div>

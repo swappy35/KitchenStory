@@ -25,6 +25,10 @@ export class UserService {
     return this.httpClient.get(`${this.url}?email=${email}`);
   }
 
+  //get one user by role
+  public getUserByRole(role: string){
+    return this.httpClient.get(`${this.url}?role=${role}`);
+  }
 
   //add user
   public addUser(user:any){

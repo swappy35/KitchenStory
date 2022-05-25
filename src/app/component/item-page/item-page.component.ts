@@ -11,17 +11,19 @@ import { ActivatedRoute,ParamMap} from '@angular/router';
 export class ItemPageComponent implements OnInit {
 
   public products:any;
+  public itemType:any;
 
   constructor(private productSrv : ProductService, private route : ActivatedRoute) { }
 
   ngOnInit(): void {
-    // this.getProducts();
 
     // public getProducts(){
       this.productSrv.getProducts().subscribe(data => {
+        // console.log("1");
         console.log(data);
         this.products = data;
       });
+
 
     // this.route.paramMap.subscribe((params:ParamMap)=>{
     //   this.products = params.get('type');
@@ -37,13 +39,13 @@ export class ItemPageComponent implements OnInit {
   //   });
   // }
 
-  public getProductByType(type:string){
-    this.productSrv.getProductByType(type).subscribe(data =>{
-      console.log(data);
-      this.products = data;
-      // this.router.navigateByUrl(`/item-page`);
-      // this.routerLink="/item-page/{{food.type}}";
-    });
-  }
-
+  // public getProductByType(type:string){
+  //   this.productSrv.getProductByType(type).subscribe(data =>{
+  //     console.log("2");
+  //     console.log(data);
+  //     this.products = data;
+  //     this.router.navigateByUrl(`/item-page`);
+  //     this.routerLink="/item-page/{{food.type}}";
+  //   });
+  // }
 }
