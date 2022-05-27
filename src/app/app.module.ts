@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './service/user.service';
 import { ItemPageComponent } from './component/item-page/item-page.component';
 import { AuthserviceService } from './service/authservice.service';
+import { CartComponent } from './component/cart/cart.component';
+import { ProductsComponent } from './component/products/products.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { AuthserviceService } from './service/authservice.service';
     LoginComponent,
     RegisterComponent,
     ItemPageComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    CartComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

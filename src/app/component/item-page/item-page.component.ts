@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/service/items/product.service';
 import { ActivatedRoute,ParamMap} from '@angular/router';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-item-page',
@@ -13,7 +14,7 @@ export class ItemPageComponent implements OnInit {
   public products:any;
   public itemType:any;
 
-  constructor(private productSrv : ProductService, private route : ActivatedRoute) { }
+  constructor(private productSrv : ProductService, private route : ActivatedRoute, private cartSrv : CartService) { }
 
   ngOnInit(): void {
 
@@ -30,6 +31,9 @@ export class ItemPageComponent implements OnInit {
     //   console.log(params);
       
     // });
+  }
+  addToCart(product : any){
+    this.cartSrv.addToCart(product);
   }
 
   // public getProducts(){
