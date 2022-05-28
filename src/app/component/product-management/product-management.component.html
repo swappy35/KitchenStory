@@ -1,0 +1,42 @@
+<!-- <div class="container mt-5">
+    <div class="card-deck">
+        <div class="card" *ngFor="let product of products">
+          <div class="card-body">
+            <h5 class="card-title">{{product.id }} - {{product.name}}</h5>
+            <p class="card-text">Desc : {{product.description}}</p>
+            <p  class="card-text"> <strong>Price : {{product.price}}</strong></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small> <br>
+              <a (click)="onEdit(product)" class="badge badge-warning mr-2">Edit</a>
+              <a (click)="onDelete(product.id)"class="badge badge-danger">Delete</a>
+          </div>
+        </div>
+      </div>
+</div> -->
+
+<h2 class="product">Products</h2>
+<div class="products">
+  <ul>
+    <li *ngFor="let product of products">
+      <a>
+        <img src="{{product.imageUrl}}" alt="{{product.name}} [image not found]">
+        <div id="name">
+          {{product.name}}
+        </div>
+        <div id="price">
+          {{product.price | currency:"INR":"symbol"}} per unit of ({{product.quantity}} {{product.quantityType}})<br>
+        </div>
+        <div id="desc">
+          {{product.description}}
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-mb-5 operations" id="edit" (click)="onEdit(product)" type="submit"> UPDATE </div>
+          <div class="col-mb-5 operations" id="delete" (click)="onDelete(product.id)"type="submit"> DELETE </div>
+          <div class="col"></div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
