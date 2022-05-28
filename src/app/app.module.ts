@@ -18,6 +18,7 @@ import { ItemPageComponent } from './component/item-page/item-page.component';
 import { AuthserviceService } from './service/authservice.service';
 import { CartComponent } from './component/cart/cart.component';
 import { ProductsComponent } from './component/products/products.component';
+import { CheckoutComponent } from './component/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ProductsComponent } from './component/products/products.component';
     ItemPageComponent,
     NotfoundComponent,
     CartComponent,
-    ProductsComponent
+    ProductsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

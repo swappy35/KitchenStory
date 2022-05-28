@@ -1,3 +1,4 @@
+<h2 class="product">Products</h2>
 <div class="products">
     <ul>
         <li *ngFor="let product of products">
@@ -13,7 +14,7 @@
                     {{product.description}}
                 </div>
                 <div id="cart">
-                    <button (click)="addToCart(product)" class="babge babge-warning mr-2">Add To Cart </button>
+                    <button (click)="addToCart(product)" class="btn btn-info col">Add To Cart </button>
                     <!-- <a (click)="addToCart(product)" class="babge babge-warning mr-2"></a> -->
                 </div>
             </a>

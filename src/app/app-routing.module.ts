@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { CartComponent } from './component/cart/cart.component';
+import { CheckoutComponent } from './component/checkout/checkout.component';
 import { HomeComponent } from './component/home/home.component';
 import { ItemPageComponent } from './component/item-page/item-page.component';
 import { LoginComponent } from './component/login/login.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
     { path: 'products', component: ProductsComponent },
     { path: 'item-page/:type', component: ItemPageComponent },
     { path: 'cart', component: CartComponent },
+    { path: 'checkout', component: CheckoutComponent },
     // { path: 'products', loadChildren: () => import('./component/products/product-routing.module').then(m => m.ProductRoutingModule) },
     // { path: 'users', loadChildren: () => import('./component/users/user-routing.module').then(m => m.UserRoutingModule) },
     { path: '**', component: NotfoundComponent }
