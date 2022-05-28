@@ -20,6 +20,7 @@ import { CartComponent } from './component/cart/cart.component';
 import { ProductsComponent } from './component/products/products.component';
 import { CheckoutComponent } from './component/checkout/checkout.component';
 import { OrderComponent } from './component/order/order.component';
+import { ProductManagementModule } from './component/product-management/product-management.module';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { OrderComponent } from './component/order/order.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ProductManagementModule
   ],
   providers: [
     UserService, 

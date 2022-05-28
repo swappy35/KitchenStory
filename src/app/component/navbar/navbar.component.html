@@ -14,8 +14,18 @@
             <li class="nav-item">
                 <a class="nav-link" routerLink="/about-us">ABOUT US</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" *ngIf="!(isAdmLoggedIn | async)">
                 <a class="nav-link" routerLink="/products">PRODUCTS</a>
+            </li>
+            <li class="nav-item dropdown" *ngIf="isAdmLoggedIn | async as isAdmLoggedIn">
+                <a class="nav-link dropdown-toggle" routerLink="/product-management" id="navbarScrollingDropdown"
+                    role="button" data-toggle="dropdown" aria-expanded="false">
+                    PRODUCTS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" routerLink="/product-management/create">Create Product</a></li>
+                    <li><a class="dropdown-item" routerLink="/product-management/update">Update Product</a></li>
+                </ul>
             </li>
             <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
@@ -28,22 +38,6 @@
                     <li><a class="dropdown-item" href="#">FRUITS & VEGETABLES</a></li>
                     <li><a class="dropdown-item" href="#">SPICES</a></li>
                     <li><a class="dropdown-item" href="#">GROCERIES</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                    data-toggle="dropdown" aria-expanded="false">
-                    KITCHEN APPLIANCES
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="#">ELECTRONIC APPLIANCES</a></li>
-                    <li><a class="dropdown-item" href="#">HARDWARE</a></li>
-                    <li><a class="dropdown-item" href="#">UTENSILS</a></li>
-                    <li><a class="dropdown-item" href="#">CROCKERY</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item disabled" href="#">CLEANLINESS</a></li>
                 </ul>
             </li> -->
         </ul>

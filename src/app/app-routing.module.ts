@@ -8,6 +8,8 @@ import { ItemPageComponent } from './component/item-page/item-page.component';
 import { LoginComponent } from './component/login/login.component';
 import { NotfoundComponent } from './component/notfound/notfound.component';
 import { OrderComponent } from './component/order/order.component';
+import { ProductManagementComponent } from './component/product-management/product-management.component';
+import { ProductManagementModule } from './component/product-management/product-management.module';
 import { ProductsComponent } from './component/products/products.component';
 import { RegisterComponent } from './component/register/register.component';
 
@@ -22,13 +24,13 @@ const routes: Routes = [
     { path: 'cart', component: CartComponent },
     { path: 'checkout', component: CheckoutComponent },
     { path: 'order', component: OrderComponent },
-    // { path: 'products', loadChildren: () => import('./component/products/product-routing.module').then(m => m.ProductRoutingModule) },
+    { path: 'product-management', loadChildren: () => import('./component/product-management/product-management-routing.module').then(m => m.ProductManagementRoutingModule) },
     // { path: 'users', loadChildren: () => import('./component/users/user-routing.module').then(m => m.UserRoutingModule) },
     { path: '**', component: NotfoundComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), ProductManagementModule],
   exports: [RouterModule]
 })
 

@@ -79,9 +79,9 @@
       "quantity": 5,
       "unit": 1,
       "quantityType": "Kg",
-      "price": 200,
+      "price": 300,
       "imageUrl": "./assets/images/Cereals/wheat.jpg",
-      "description": "Aromatic fresh grains. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
+      "description": "Fresh aromatic grains. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
     },
     {
       "id": 4,
