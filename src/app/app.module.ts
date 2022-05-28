@@ -19,6 +19,7 @@ import { AuthserviceService } from './service/authservice.service';
 import { CartComponent } from './component/cart/cart.component';
 import { ProductsComponent } from './component/products/products.component';
 import { CheckoutComponent } from './component/checkout/checkout.component';
+import { OrderComponent } from './component/order/order.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CheckoutComponent } from './component/checkout/checkout.component';
     NotfoundComponent,
     CartComponent,
     ProductsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
