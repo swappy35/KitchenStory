@@ -17,7 +17,12 @@ export class CreateComponent implements OnInit {
    
     this.productForm = this.fromBuilder.group({
       name: ['', [Validators.required, Validators.minLength(3),Validators.maxLength(30)]],
+      type: ['',[Validators.required]],
       price: ['',[Validators.required]],
+      quantity: ['',[Validators.required]],
+      quantityType: ['',[Validators.required]],
+      unit: ['1'],
+      imageURL: ['./assets/imaes/'],
       description: ['', [Validators.required]],
     });
   }
@@ -33,7 +38,7 @@ export class CreateComponent implements OnInit {
       this.productSrv.addProduct(this.productForm.value).subscribe(res=>{
         // console.log(res);
         console.log("Product is created successfully");
-        this.router.navigateByUrl("/products");
+        this.router.navigateByUrl("/product-management");
       });
     } else {
       console.log("Invalid Form !");
@@ -64,8 +69,28 @@ export class CreateComponent implements OnInit {
     return this.form['name'];
   }
 
+  get type() {
+    return this.form['type'];
+  }
+
   get price() {
     return this.form['price'];
+  }
+
+  get quantity() {
+    return this.form['quantity'];
+  }
+
+  get quantityType() {
+    return this.form['quantityType'];
+  }
+
+  get unit() {
+    return this.form['unit'];
+  }
+
+  get imageURL() {
+    return this.form['imageURL'];
   }
 
   get description() {
