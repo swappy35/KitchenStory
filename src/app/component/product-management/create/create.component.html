@@ -93,12 +93,12 @@
                     <!-- Image URL -->
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="imageURL">Image URL</label>
-                            <input type="text" class="form-control" name="imageURL" id="imageURL" readonly
-                                formControlName="imageURL" value="./assets/images/" aria-describedby="imageURLHelp">
-                            <small *ngIf="hasError('imageURL')" [class]="hasError('imageURL') ? 'error' :''">
-                                <div *ngIf="imageURL.errors">
-                                    <span *ngIf="imageURL.errors['required']">Image URL is a required field</span>
+                            <label for="imageUrl">Image URL</label>
+                            <input type="text" class="form-control" name="imageUrl" id="imageUrlL" readonly
+                                formControlName="imageURL" value="./assets/images/" aria-describedby="imageUrlHelp">
+                            <small *ngIf="hasError('imageUrl')" [class]="hasError('imageUrl') ? 'error' :''">
+                                <div *ngIf="imageUrl.errors">
+                                    <span *ngIf="imageUrl.errors['required']">Image URL is a required field</span>
                                 </div>
                             </small>
                         </div>

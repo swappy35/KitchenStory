@@ -22,7 +22,7 @@ export class CreateComponent implements OnInit {
       quantity: ['',[Validators.required]],
       quantityType: ['',[Validators.required]],
       unit: ['1'],
-      imageURL: ['./assets/imaes/'],
+      imageUrl: ['./assets/imaes/'],
       description: ['', [Validators.required]],
     });
   }
@@ -89,7 +89,7 @@ export class CreateComponent implements OnInit {
     return this.form['unit'];
   }
 
-  get imageURL() {
+  get imageUrl() {
     return this.form['imageURL'];
   }
 

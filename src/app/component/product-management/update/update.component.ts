@@ -19,7 +19,12 @@ export class UpdateComponent implements OnInit {
     this.productForm = this.fromBuilder.group({
       id:[''],
       name: ['', [Validators.required, Validators.minLength(3),Validators.maxLength(30)]],
+      type: ['',[Validators.required]],
       price: ['',[Validators.required]],
+      quantity: ['',[Validators.required]],
+      quantityType: ['',[Validators.required]],
+      unit: ['1'],
+      imageUrl: ['', [Validators.required]],
       description: ['', [Validators.required]],
     });
   }
@@ -40,7 +45,7 @@ export class UpdateComponent implements OnInit {
       this.productSrv.updateProduct(this.productForm.value).subscribe(res=>{
         console.log(res);
         console.log("Product is updated successfully");
-        this.router.navigateByUrl("/products");
+        this.router.navigateByUrl("/product-management");
       });
     } else {
       console.log("Invalid Form !");
@@ -71,11 +76,32 @@ export class UpdateComponent implements OnInit {
     return this.form['name'];
   }
 
+  get type() {
+    return this.form['type'];
+  }
+
   get price() {
     return this.form['price'];
+  }
+
+  get quantity() {
+    return this.form['quantity'];
+  }
+
+  get quantityType() {
+    return this.form['quantityType'];
+  }
+
+  get unit() {
+    return this.form['unit'];
+  }
+
+  get imageUrl() {
+    return this.form['imageURL'];
   }
 
   get description() {
     return this.form['description'];
   }
+
 }
