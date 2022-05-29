@@ -21,6 +21,7 @@ import { ProductsComponent } from './component/products/products.component';
 import { CheckoutComponent } from './component/checkout/checkout.component';
 import { OrderComponent } from './component/order/order.component';
 import { ProductManagementModule } from './component/product-management/product-management.module';
+import { SearchFilterPipe } from './search-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ProductManagementModule } from './component/product-management/product-
     CartComponent,
     ProductsComponent,
     CheckoutComponent,
-    OrderComponent
+    OrderComponent,
+    SearchFilterPipe,
   ],
   imports: [
     BrowserModule,
