@@ -47,6 +47,14 @@
       "password": "Mike@123",
       "role": "customer",
       "id": 6
+    },
+    {
+      "firstName": "Swapnil",
+      "lastName": "Pal",
+      "email": "pal.swapnil@gmail.com",
+      "password": "swapnil@123",
+      "role": "customer",
+      "id": 7
     }
   ],
   "products": [
