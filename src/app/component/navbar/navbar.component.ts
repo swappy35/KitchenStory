@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AuthserviceService } from 'src/app/service/authservice.service';
 import { UserService } from 'src/app/service/user.service';
@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
   public searchItem : string = '';
   public searchFilter : any = '';
 
-  constructor(private router : Router, private authService : AuthserviceService, private userSrc : UserService) { }
+  constructor(private router : Router,private route: ActivatedRoute, private authService : AuthserviceService, private userSrc : UserService) { }
 
   ngOnInit(): void {
     this.isAdmLoggedIn = this.authService.isAdmLoggedIn;
@@ -29,6 +29,12 @@ export class NavbarComponent implements OnInit {
     // if(this.isCustLoggedIn == true)
     console.log(this.isCustLoggedIn);
     console.log("Buyer Navbar");
+
+    this.route.params.subscribe(params => {
+      if(params['searchItem']){
+        this.searchItem = params['searchItem'];
+      }
+    })
   }
   onSubmit(event : any){
     this.searchItem = (event.target as HTMLInputElement).value;
@@ -37,10 +43,14 @@ export class NavbarComponent implements OnInit {
     
   }
   
-  search(event : any){
-    this.searchItem = (event.target as HTMLInputElement).value;
-    console.log(this.searchItem);
+  // search(event : any){
+  //   this.searchItem = (event.target as HTMLInputElement).value;
+  //   console.log(this.searchItem);
     
+  // }
+  search():void{
+    if(this.searchItem)
+    this.router.navigateByUrl('/product/' +this.searchItem);
   }
 
   onLogout(){

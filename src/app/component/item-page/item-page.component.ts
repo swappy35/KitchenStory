@@ -13,6 +13,7 @@ export class ItemPageComponent implements OnInit {
 
   public products:any;
   public itemType:any;
+  public searchItem : any = '';
 
   constructor(private productSrv : ProductService, private route : ActivatedRoute, private cartSrv : CartService) { }
 

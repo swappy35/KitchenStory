@@ -1,7 +1,11 @@
 <h2 class="product">Products</h2>
+<div class="text-center">
+    <input type="text" class="form-control search-form" [ngModelOptions]="{standalone : true}" [(ngModel)]="searchItem"
+        id="search" placeholder="Search Products">
+</div>
 <div class="products">
     <ul>
-        <li *ngFor="let product of products">
+        <li *ngFor="let product of products | searchFilter:searchItem">
             <a>
                 <img src="{{product.imageUrl}}" alt="{{product.name}} [image not found]">
                 <div id="name">
