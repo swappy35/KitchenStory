@@ -12,17 +12,27 @@ table {
     width: 100%;
     margin-bottom: 1rem;
     color: black;
-    background-color: rgb(206, 183, 206);
+    background-color: rgb(0, 0, 0);
     word-wrap: break-word;
-    border: 3px solid black;
-    border-radius: .25rem;
+    /* border: 3px solid black; */
+    /* border-radius: 10px; */
+    /* border-radius: .25rem; */
     border-collapse: separate;
     border-spacing: 4px;
 }
 
-.table-bordered td,
+
 .table-bordered th {
     border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(159, 240, 97);
+    font-weight: bold;
+}
+
+.table-bordered td{
+    border: 2px dashed black;
+    border-radius: 10px;
+    background-color: rgb(97, 207, 240);
     font-weight: bold;
 }
 

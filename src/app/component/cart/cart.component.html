@@ -28,12 +28,12 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="8" style="text-align:right;">
+                <th colspan="8" style="text-align:right;">
                     <button (click)="emptycart()" class="btn btn-danger" float-end>EmptyCart</button>&nbsp;&nbsp;
                     <button (click)="checkoutcart()" class="btn btn-success" float-end>Checkout</button> &nbsp;&nbsp;
 
                     <strong>Grand Total: {{grandTotal | currency:"INR":"symbol"}} </strong>
-                </td>
+                </th>
             </tr>
         </tbody>
     </table>
