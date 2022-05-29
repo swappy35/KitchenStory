@@ -5,13 +5,15 @@ import { CreateComponent } from './create/create.component';
 import { UpdateComponent } from './update/update.component';
 import { ProductService } from 'src/app/service/items/product.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SearchFilterPipe } from './search-filter.pipe';
 
 
 @NgModule({
   declarations: [
     ProductManagementComponent,
     CreateComponent,
-    UpdateComponent
+    UpdateComponent,
+    SearchFilterPipe
   ],
   imports: [
     CommonModule,

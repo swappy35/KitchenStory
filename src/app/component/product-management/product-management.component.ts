@@ -11,6 +11,7 @@ import { ProductService } from 'src/app/service/items/product.service';
 export class ProductManagementComponent implements OnInit {
 
   public products: any;
+  public searchItem: any = '';
 
   // inject data service to load data
   constructor(private productSrv: ProductService, private router: Router) { }

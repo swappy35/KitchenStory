@@ -59,4 +59,9 @@ li a:hover {
     font-size: 40px;
 }
 
+#search{
+    margin:auto;
+    text-align: center;
+    width: 25%;
+}
 
