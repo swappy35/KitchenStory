@@ -55,6 +55,14 @@
       "password": "swapnil@123",
       "role": "customer",
       "id": 7
+    },
+    {
+      "firstName": "Swapnil",
+      "lastName": "Pal",
+      "email": "swap.pal@gmail.com",
+      "password": "Swap@123",
+      "role": "customer",
+      "id": 8
     }
   ],
   "products": [
@@ -62,10 +70,10 @@
       "id": 1,
       "name": "Rice",
       "type": "cereal",
-      "quantity": 5,
-      "unit": 1,
+      "price": "250",
+      "quantity": "6",
       "quantityType": "Kg",
-      "price": "200",
+      "unit": 1,
       "imageUrl": "./assets/images/Cereals/rice.jpg",
       "description": "White long grains. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis eum cumque. Libero laborum inventore tempora saepe repellat tenetur officia."
     },
@@ -85,7 +93,7 @@
       "name": "Wheat",
       "type": "cereal",
       "price": "300",
-      "quantity": "5",
+      "quantity": "3",
       "quantityType": "Kg",
       "unit": 1,
       "imageUrl": "./assets/images/Cereals/wheat.jpg",
